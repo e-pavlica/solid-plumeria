@@ -1,0 +1,14 @@
+/node_modules/
+/public/*.css
+/public/*.css.*
+/public/*.js
+/public/*.js.*
+/public/*.html
+/public/*.html.*
+
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

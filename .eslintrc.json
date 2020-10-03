@@ -1,0 +1,39 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true
+  },
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "globals": {},
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "svelte3",
+    "@typescript-eslint"
+  ],
+  "root": true,
+  "rules": {
+    "func-call-spacing": ["error", "never"],
+    "indent": ["warn", 2],
+    "linebreak-style": ["error", "unix"],
+    "no-prototype-builtins": "off",
+    "no-trailing-spaces": "error",
+    "no-unused-vars": ["error", { "vars": "local", "argsIgnorePattern": "^_" }],
+    "no-useless-rename": ["error"],
+    "quotes": ["warn", "single"],
+    "semi": ["error", "always"],
+    "space-before-function-paren": ["error", "always"],
+    "@typescript-eslint/no-explicit-any": "off"
+  },
+  "settings": {},
+  "overrides": [
+    {
+      "files": ["**/*.svelte"],
+      "processor": "svelte3/svelte3"
+    }
+  ]
+}
